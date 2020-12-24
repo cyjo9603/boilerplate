@@ -2,6 +2,10 @@ type Hello {
   message: String!
 }
 
+type HelloResponse {
+  result: Boolean!
+}
+
 type Query {
   hello: Hello!
 }
