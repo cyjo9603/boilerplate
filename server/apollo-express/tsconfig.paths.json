@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@config/*": ["src/config/*"],
+      "@models/*": ["src/models/*"],
       "@gql-types/*": ["src/types/*"],
       "@/*": ["src/*"]
     },

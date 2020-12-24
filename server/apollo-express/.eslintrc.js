@@ -9,7 +9,17 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
   ],
-  rules: {},
+  rules: {
+    'import/prefer-default-export': 0,
+    'import/extensions': [
+      'error',
+      'always',
+      {
+        js: 'never',
+        ts: 'never',
+      },
+    ],
+  },
   settings: {
     'import/resolver': {
       node: {
