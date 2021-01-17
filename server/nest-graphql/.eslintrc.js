@@ -33,5 +33,6 @@ module.exports = {
     'import/extensions': 0,
     'max-classes-per-file': 0,
     'no-param-reassign': 0,
+    '@typescript-eslint/no-non-null-assertion': 0,
   },
 };
