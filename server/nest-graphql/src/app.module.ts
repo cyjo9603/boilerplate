@@ -4,6 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule } from '@nestjs/config';
 
 import { HelloModule } from './hello/hello.module';
+import { AuthModule } from './auth/auth.module';
 
 const prod = process.env.NODE_ENV === 'production';
 
@@ -25,6 +26,7 @@ const prod = process.env.NODE_ENV === 'production';
       context: (ctx) => ({ ...ctx }),
     }),
     HelloModule,
+    AuthModule,
   ],
 })
 export class AppModule {}
