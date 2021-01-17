@@ -29,6 +29,6 @@ async function bootstrap() {
   app.use(cookieParser());
   app.use(compression());
 
-  await app.listen(3000);
+  await app.listen(PORT);
 }
 bootstrap();
