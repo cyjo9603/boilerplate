@@ -11,12 +11,18 @@
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main"
+    "start:prod": "NODE_ENV=production PORT=433 pm2 start ./dist/main.js"
   },
   "dependencies": {
     "@nestjs/common": "^7.0.0",
     "@nestjs/core": "^7.0.0",
     "@nestjs/platform-express": "^7.0.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "express-rate-limit": "^5.2.3",
+    "helmet": "^4.3.1",
+    "hpp": "^0.2.3",
+    "morgan": "^1.10.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.4"
@@ -25,8 +31,13 @@
     "@nestjs/cli": "^7.0.0",
     "@nestjs/schematics": "^7.0.0",
     "@nestjs/testing": "^7.0.0",
+    "@types/compression": "^1.7.0",
+    "@types/cookie-parser": "^1.4.2",
     "@types/express": "^4.17.3",
+    "@types/express-rate-limit": "^5.1.1",
+    "@types/hpp": "^0.2.1",
     "@types/jest": "26.0.10",
+    "@types/morgan": "^1.9.2",
     "@types/node": "^13.9.1",
     "@types/supertest": "^2.0.8",
     "@typescript-eslint/eslint-plugin": "3.9.1",
